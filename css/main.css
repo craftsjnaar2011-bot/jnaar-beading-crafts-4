@@ -1,0 +1,580 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background:#f5f5f5;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#333;
+    color:white;
+    flex-wrap:wrap;
+}
+
+header h1{
+    font-size:22px;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+/* ================= LOGO ================= */
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ================= SLIDER ================= */
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slides img {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+/* ================= OVERLAY ================= */
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.1);
+    z-index:1;
+}
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    z-index:2;
+
+    animation:fadeIn 2s ease;
+}
+
+.hero-content h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+.hero-content button{
+    padding:15px 35px;
+    background:#007bff;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.hero-content button:hover{
+    background:#0056b3;
+    transform:scale(1.05);
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    padding:70px 20px;
+    text-align:center;
+
+    animation:fadeUp 1s ease;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+/* ================= FEATURED PRODUCTS ================= */
+
+.featured{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.featured h2{
+    margin-bottom:30px;
+}
+
+.product-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.product{
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    transition:.4s;
+
+}
+
+.product img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.product h3{
+    margin-top:15px;
+    color:#333;
+}
+
+.product p{
+    margin:15px 0;
+    color:#666;
+}
+
+.product:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+/* ================= PAGE TITLE ================= */
+
+.page-title{
+    text-align:center;
+    padding:60px 20px 30px;
+    background:#f8f8f8;
+}
+
+.page-title h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.page-title p{
+    color:#666;
+    font-size:18px;
+}
+
+/* ================= FILTER BUTTONS ================= */
+
+.filters{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:30px 0;
+}
+
+.filters button{
+    border-radius:25px;
+}
+
+/* ================= PRICE ================= */
+
+.price{
+    font-size:20px;
+    color:#007bff;
+    margin:15px 0;
+}
+section{
+    padding-top:70px;
+    padding-bottom:70px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.gallery-track{
+
+    display:flex;
+
+    gap:20px;
+
+    width:max-content;
+
+    animation:scrollGallery 20s linear infinite;
+
+}
+
+.gallery img{
+    width:280px;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+/* ================= BUTTON ================= */
+
+button{
+    padding:12px 28px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:#0056b3;
+}
+
+/* ================= CONTACT ================= */
+
+/* ================= CONTACT PAGE ================= */
+
+.contact{
+    padding:70px 20px;
+    background:#f8f8f8;
+}
+
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    text-align:left;
+}
+
+.contact-box h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.contact-box p{
+    margin:15px 0;
+    font-size:18px;
+    color:#555;
+}
+
+.contact-box button{
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    font-size:18px;
+    background:#25D366;
+    border:none;
+    border-radius:30px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-box button:hover{
+    background:#1EBE5D;
+    transform:translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
+/* ================= WHY CHOOSE US ================= */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-10px);
+}
+
+.feature h3{
+    margin-bottom:15px;
+    color:#007bff;
+}
+
+.feature p{
+    color:#555;
+}
+
+/* ================= CALL TO ACTION ================= */
+
+.cta{
+    background:#007bff;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.cta h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.cta button{
+    background:white;
+    color:#007bff;
+    font-size:18px;
+    padding:15px 35px;
+    border-radius:30px;
+}
+
+.cta button:hover{
+    background:#f0f0f0;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+    color:#ddd;
+}
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translate(-50%,-40%);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translate(-50%,-50%);
+
+    }
+
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes scrollGallery{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* Fade-in animation */
+
+.product,
+.feature,
+.review,
+.gallery,
+.cta{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* Active navigation */
+
+nav a.active{
+
+    color:#00bfff;
+
+    font-weight:bold;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+}
+
+.hero-content h2{
+
+    font-size:32px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+}
+
+.gallery img{
+
+    width:180px;
+
+    height:140px;
+
+}
+
+}

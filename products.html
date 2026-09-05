@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - JNaar Beading & Crafts</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="image/logo.png" alt="JNaar Logo">
+        </a>
+    </div>
+
+    <h1>JNaar Beading & Crafts</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <h2>Our Handmade Collection</h2>
+
+    <p>
+        Browse our handcrafted African beadwork and order directly through WhatsApp.
+    </p>
+
+</section>
+
+<!-- ================= FILTERS ================= -->
+
+<section>
+
+    <div class="filters">
+
+        <button onclick="filterProducts('all')">All</button>
+
+        <button onclick="filterProducts('jewelry')">💎 Jewelry</button>
+
+        <button onclick="filterProducts('car')">🚗 Car Accessories</button>
+
+        <button onclick="filterProducts('traditional')">🪘 Traditional</button>
+
+        <button onclick="filterProducts('bracelets')">📿 Bracelets</button>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="featured">
+
+    <div class="product-container">
+
+        <!-- Necklace -->
+        <div class="product jewelry">
+
+            <img src="image/Nacklace.jpeg" alt="Beaded Necklace">
+
+            <h3>Beaded Necklace</h3>
+
+            <p>Elegant handmade necklace.</p>
+
+            <p class="price"><strong>KSh 6,000</strong></p>
+
+            <button onclick="orderNow('Beaded Necklace')">
+                Order Now
+            </button>
+
+        </div>
+
+        <!-- Car Cover -->
+        <div class="product car">
+
+            <img src="image/car.jpg" alt="Steering Wheel Cover">
+
+            <h3>Steering Wheel Cover</h3>
+
+            <p>Comfortable handmade steering wheel cover.</p>
+
+            <p class="price"><strong>KSh 5,000</strong></p>
+
+            <button onclick="orderNow('Steering Wheel Cover')">
+                Order Now
+            </button>
+
+        </div>
+
+        <!-- Traditional -->
+        <div class="product traditional">
+
+            <img src="image/bead.jpg" alt="Traditional Beaded Piece">
+
+            <h3>Beaded Fringe Piece</h3>
+
+            <p>Traditional decorative beadwork.</p>
+
+            <p class="price"><strong>KSh 5,000</strong></p>
+
+            <button onclick="orderNow('Beaded Fringe Piece')">
+                Order Now
+            </button>
+
+        </div>
+
+        <!-- Bracelet -->
+        <div class="product bracelets">
+
+            <img src="image/bracelet.jpeg" alt="Beaded Bracelet">
+
+            <h3>Beaded Bracelet</h3>
+
+            <p>Beautiful handmade bracelet.</p>
+
+            <p class="price"><strong>KSh 500</strong></p>
+
+            <button onclick="orderNow('Beaded Bracelet')">
+                Order Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CUSTOM ORDERS ================= -->
+
+<section class="cta">
+
+    <h2>Need a Custom Beaded Design?</h2>
+
+    <p>
+        We create personalized beadwork for weddings, gifts,
+        businesses and special occasions.
+    </p>
+
+    <button onclick="location.href='contact.html'">
+
+        Contact Us
+
+    </button>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>JNaar Beading & Crafts</h3>
+
+    <p>Handmade African Beadwork & Traditional Crafts</p>
+
+    <p>📞 +254 755 752 479</p>
+
+    <p>📧 jnaarcrafts@gmail.com</p>
+
+    <p>📍 Nairobi, Kenya</p>
+
+    <p>&copy; 2026 JNaar Beading & Crafts. All Rights Reserved.</p>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
