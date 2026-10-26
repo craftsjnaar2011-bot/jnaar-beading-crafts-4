@@ -541,40 +541,179 @@ nav a.active{
 
 /* ================= MOBILE ================= */
 
-@media(max-width:768px){
 
-header{
+/* ================= MOBILE RESPONSIVE ================= */
 
-    flex-direction:column;
+@media (max-width: 768px) {
 
-    text-align:center;
+    /* Header */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 15px 12px;
+        text-align: center;
+    }
 
+    header h1 {
+        font-size: 20px;
+        line-height: 1.4;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+        margin-top: 0;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    /* Hero section */
+    .hero {
+        height: 75svh;
+        min-height: 480px;
+        max-height: 700px;
+    }
+
+    .hero-content {
+        width: 92%;
+        max-width: 550px;
+        padding: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: clamp(28px, 7vw, 38px);
+        line-height: 1.25;
+        margin-bottom: 18px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+
+    .hero-content button {
+        padding: 13px 24px;
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    /* Sections */
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .about,
+    .featured,
+    .gallery,
+    .contact {
+        padding: 40px 15px;
+    }
+
+    .page-title {
+        padding: 40px 15px 25px;
+    }
+
+    .page-title h2 {
+        font-size: 30px;
+    }
+
+    .page-title p {
+        font-size: 16px;
+    }
+
+    /* Products */
+    .product-container {
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(min(100%, 220px), 1fr)
+        );
+        gap: 18px;
+    }
+
+    .product img {
+        height: 220px;
+    }
+
+    /* Gallery */
+    .gallery img {
+        width: 200px;
+        height: 150px;
+    }
+
+    /* Contact */
+    .contact-box {
+        width: 100%;
+        padding: 25px 18px;
+    }
+
+    .contact-box p {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Call to action */
+    .cta {
+        padding: 45px 18px;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 15px;
+    }
 }
 
-nav{
+/* Extra-small phones */
+@media (max-width: 380px) {
 
-    margin-top:15px;
+    header h1 {
+        font-size: 18px;
+    }
 
-}
+    nav {
+        gap: 10px 16px;
+    }
 
-.hero-content h2{
+    nav a {
+        font-size: 15px;
+    }
 
-    font-size:32px;
+    .hero {
+        min-height: 450px;
+    }
 
-}
+    .hero-content h2 {
+        font-size: 27px;
+    }
 
-.hero-content p{
+    .hero-content p {
+        font-size: 15px;
+    }
 
-    font-size:18px;
-
-}
-
-.gallery img{
-
-    width:180px;
-
-    height:140px;
-
-}
-
+    .product img {
+        height: 190px;
+    }
 }
